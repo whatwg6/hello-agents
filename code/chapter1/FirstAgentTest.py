@@ -60,6 +60,7 @@ def get_weather(city: str) -> str:
 
 import os
 from tavily import TavilyClient
+from dotenv import load_dotenv
 
 def get_attraction(city: str, weather: str) -> str:
     """
@@ -141,11 +142,17 @@ class OpenAICompatibleClient:
 import re
 
 # --- 1. 配置LLM客户端 ---
-# 请根据您使用的服务，将这里替换成对应的凭证和地址
-API_KEY = "YOUR_API_KEY"
-BASE_URL = "YOUR_BASE_URL"
-MODEL_ID = "YOUR_MODEL_ID"
-os.environ['TAVILY_API_KEY'] = "YOUR_TAVILY_API_KEY"
+# 请在 .env 或系统环境变量中配置以下变量：
+# API_KEY、BASE_URL、MODEL_ID、TAVILY_API_KEY
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+MODEL_ID = os.getenv("MODEL_ID")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+
+if TAVILY_API_KEY:
+    os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 
 llm = OpenAICompatibleClient(
     model=MODEL_ID,
