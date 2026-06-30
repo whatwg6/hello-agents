@@ -167,3 +167,7 @@ test_*.py
 !test_tools.py
 .workbuddy/
 memory/
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
