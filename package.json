@@ -4,7 +4,8 @@
   "type": "module",
   "packageManager": "pnpm@10.33.4",
   "scripts": {
-    "chapter1:first-agent": "tsx code/chapter1/FirstAgentTest.ts"
+    "chapter1:first-agent": "tsx code/chapter1/FirstAgentTest.ts",
+    "chapter2:eliza": "tsx code/chapter2/ELIZA.ts"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
