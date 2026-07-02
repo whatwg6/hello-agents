@@ -9,5 +9,5 @@
     "types": ["node"],
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["code/chapter1/**/*.ts", "code/chapter2/**/*.ts"]
+  "include": ["code"]
 }
