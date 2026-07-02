@@ -6,7 +6,8 @@
   "scripts": {
     "chapter1:first-agent": "tsx code/chapter1/FirstAgentTest.ts",
     "chapter2:eliza": "tsx code/chapter2/ELIZA.ts",
-    "chapter4:llm-client": "tsx code/chapter4/llm_client.ts"
+    "chapter4:llm-client": "tsx code/chapter4/llm_client.ts",
+    "chapter4:tools": "tsx code/chapter4/tools.ts"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",

@@ -78,8 +78,8 @@ class ToolExecutor:
         获取所有可用工具的格式化描述字符串。
         """
         return "\n".join([
-            f"- {name}: {info['description']}" 
-            for name, info in self.tools.items()
+            f"- {tool_name}: {tool_info['description']}" 
+            for tool_name, tool_info in self.tools.items()
         ])
 
 
