@@ -9,7 +9,8 @@
     "chapter4:llm-client": "tsx code/chapter4/llm_client.ts",
     "chapter4:tools": "tsx code/chapter4/tools.ts",
     "chapter4:react": "tsx code/chapter4/ReAct.ts",
-    "chapter4:plan-and-solve": "tsx code/chapter4/Plan_and_solve.ts"
+    "chapter4:plan-and-solve": "tsx code/chapter4/Plan_and_solve.ts",
+    "chapter4:reflection": "tsx code/chapter4/Reflection.ts"
   },
   "devDependencies": {
     "@types/node": "^26.0.1",
